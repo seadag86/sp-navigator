@@ -1,0 +1,14 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.10.0",
+    "libraryName": "sp-navigator",
+    "libraryId": "0089b068-9fb8-40aa-a8bd-b5b9a9d78f13",
+    "environment": "spo",
+    "packageManager": "npm",
+    "framework": "react",
+    "isCreatingSolution": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
+  }
+}

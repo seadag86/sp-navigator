@@ -1,0 +1,13 @@
+.navigator-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 2rem;
+  padding-right: 1rem;
+  background-color: #ddd;
+}
+
+.menu-button {
+  padding: 0.5rem 1rem;
+  width: 50px;
+}

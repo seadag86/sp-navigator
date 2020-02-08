@@ -1,0 +1,75 @@
+$primaryColor: "[theme: themePrimary, default: #000000]";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  row-gap: 3%;
+  list-style-type: none;
+  margin: 0 3rem 3rem 4rem;
+  padding: 0;
+  text-overflow: ellipsis;
+  ul {
+    list-style-type: none;
+    margin-bottom: 6rem;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.menu-item {
+  width: 30%;
+  margin: 0 0.2rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  &.inactive > a {
+    color: #999;
+  }
+  a {
+    display: block;
+    color: $primaryColor;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.2rem 0;
+    margin: 0.2rem 0;
+    border-bottom: 1px solid $primaryColor;
+  }
+  &:hover > a,
+  &:focus > a {
+    color: #000;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
+
+.menu-sub-item {
+  float: none;
+  font-size: 1rem;
+  margin: 0;
+  &.active > a {
+    color: $primaryColor;
+  }
+  &.inactive > a {
+    color: #666;
+  }
+  a {
+    display: block;
+    font-size: 1rem;
+    color: #999;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+  }
+  &:hover > a,
+  &:focus > a {
+    color: $primaryColor;
+  }
+  ul {
+    padding-left: 2rem;
+    margin-bottom: 0.2rem;
+  }
+}
