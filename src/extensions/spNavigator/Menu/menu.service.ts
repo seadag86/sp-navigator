@@ -25,9 +25,6 @@ export default class MenuService {
     const siteCollections = await this.getAllSiteCollections();
     const subSites = await this.getAllSubSites();
 
-    console.log("site collectiions", siteCollections);
-    console.log("sub sites", subSites);
-
     // If subsite is child of site collection add to children prop
     return siteCollections.map(webSite => {
       return {
