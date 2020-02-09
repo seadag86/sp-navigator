@@ -11,19 +11,18 @@ $primaryColor: "[theme: themePrimary]";
 .navbar {
   display: inline-block;
   list-style-type: none;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
-  margin: 0;
+  margin: 0 1rem 0 0;
   padding: 0;
   white-space: nowrap !important;
   text-overflow: clip;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  scroll-behavior: smooth;
   ul {
     width: 12rem;
     list-style-type: none;
     padding: 0;
+    margin: 0;
     white-space: normal;
   }
   ul ul,
@@ -105,5 +104,14 @@ $primaryColor: "[theme: themePrimary]";
     display: block;
     position: absolute;
     z-index: 99999;
+  }
+}
+
+.menu-button {
+  &.visible {
+    display: block;
+  }
+  &.hidden {
+    display: none;
   }
 }
