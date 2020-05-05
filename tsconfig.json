@@ -19,6 +19,6 @@
     "lib": ["es5", "dom", "es2015.collection"],
     "esModuleInterop": true
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "src/extensions/MenuList/MenuList.tsx"],
   "exclude": ["node_modules", "lib"]
 }

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import styles from "./Menu.module.scss";
-import { IconButton, RefObject } from "office-ui-fabric-react";
+import { IconButton } from "office-ui-fabric-react";
 
 export interface IMenuProps {
   items: IMenuItem[];

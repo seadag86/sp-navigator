@@ -1,10 +1,10 @@
 import { ApplicationCustomizerContext } from "@microsoft/sp-application-base";
 import React, { Fragment, useEffect, useState } from "react";
 import { Stack, IconButton } from "office-ui-fabric-react";
-import MenuOverlay from "./Menu/MenuOverlay";
 import styles from "./App.module.scss";
 import MenuService from "./Menu/menu.service";
 import Menu, { IMenuItem } from "./Menu/Menu";
+import Overlay from "./Overlay/Overlay";
 
 export interface IAppProps {
   context: ApplicationCustomizerContext;
@@ -87,7 +87,7 @@ const App: React.FC<IAppProps> = ({ context }: IAppProps) => {
         />
       </Stack>
 
-      <MenuOverlay
+      <Overlay
         expanded={isExpanded}
         onCloseModal={toggleModal}
         items={menuItems}
